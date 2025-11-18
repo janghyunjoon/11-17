@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
+import img1 from "../assets/image1.jpeg";
+import img2 from "../assets/image2.jpeg";
+import img3 from "../assets/image3.jpeg";
 
-const imageList = [
-  "https://cdn-icons-png.flaticon.com/512/300/300221.png", 
-  "IMAGE_URL_2",
-  "IMAGE_URL_3"
-];
+const imageList = [img1, img2, img3];
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
