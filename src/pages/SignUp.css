@@ -1,0 +1,192 @@
+/* 전체 구조 */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+/* LEFT SIGNUP AREA */
+.signup-container {
+  width: 500px;
+  text-align: left;
+}
+.sign-up-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.signup-container h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.sub {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* row 2개 input */
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.signup-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Password with eye icon */
+.pw-box {
+  position: relative;
+}
+
+.pw-box input {
+  width: 475px;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* agree */
+.agree-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* buttons */
+.create-btn {
+  padding: 14px;
+  background: #a8d5b6;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-login {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  color: #444;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid #6fc2a3;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #6fc2a3;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 20px;
+  width: 100%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d3d3d3;  /* 얇은 회색 라인 */
+  margin: 0 12px;        /* 텍스트와 라인 사이 여백 */
+}
+
+.divider span {
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
+/* Social icons */
+.social-box {
+    justify-content: space-between;
+  display: flex;
+}
+
+.social-btn {
+  width: 150px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1.5px solid #98c9b8;
+  background: white;
+  cursor: pointer;
+}
+
+.social-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+/* RIGHT SLIDER (기존 그대로) */
+.slider-container {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.indicator-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.indicator.active {
+  background: #6fc2a3;
+}

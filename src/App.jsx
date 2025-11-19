@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
-    <Login />
+    <Routes>
+
+      {/* 기본 시작 화면 → Login */}
+      <Route path="/" element={<Login />} />
+
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+
+    </Routes>
   );
 }
 
-export default App
+export default App;
