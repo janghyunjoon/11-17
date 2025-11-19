@@ -81,6 +81,7 @@
 
 /* buttons */
 .create-btn {
+    height: 45px;
   padding: 14px;
   background: #a8d5b6;
   border: none;

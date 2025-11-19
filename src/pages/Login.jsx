@@ -87,7 +87,7 @@ const Login = () => {
             비밀번호 기억하기
           </label>
 
-          <button type="submit" className="login-btn">Login</button>
+          <button type="submit" className="login-btn">로그인</button>
 
           <button
             type="button"
